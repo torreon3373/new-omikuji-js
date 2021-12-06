@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/sample.css">
+  <title>じゃんけん</title>
+</head>
+
+<body>
+  <header>
+    <h1><center><div class="keyframe7 animation">じゃんけん</h1></div></center>
+  </header>
+
+  <main>
+    <div class="img-wrap"><img>
+      <center><img src="image/beach_n.jpg"></center>
+      <div class="btn-border-gradient-wrap btn-border-gradient-wrap--gold">
+       <button type="submit"><font size="10">ショウブ</button></a></font>
+      </div>
+
+      <div class="slide" id="makeImg">
+      <img src="image/janken_gu.png" alt="goo">
+      <img src="image/janken_choki.png" alt="choki">
+      <img src="image/janken_pa.png" alt="pa">
+      </div> 
+
+     
+   
+    <div class="cover1"></div>
+    <div class="cover2"></div>
+    <div class="cover3>"></div>
+    <img></div>
+
+    <ul>
+      
+       <li id="gu_btn"><span><img src="image/janken_gu.png"class="keyframe1 animation"> </li>
+
+       <li id="cho_btn"><img src="image/janken_choki.png"class="keyframe2 animation"></li>
+       <li id="par_btn">パー<img src="image/janken_pa.png"class="keyframe3 animation"></li>
+
+     
+    </ul>
+    <div>コンピュータの出した手は？</div>
+    <div id="echo"></div>
+    <div>結果は？</div>
+    <div id="result"></div>
+  </main>
+
+  <footer>フッター</footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script>
+    $('#gu_btn').on('click', function () {
+
+      const min = 1;
+      const max = 3;
+      const gu_btn = 1;
+      const cho_btn = 2;
+      const par_btn = 3;
+
+
+      //ここに処理を追加
+
+
+      const randomnumber = Math.floor(Math.random() * (max - min + 1)) + min;
+      console.log(randomnumber);
+
+      //*相手
+      if (randomnumber === 1) {
+        $('#echo').text('グー');
+      } else if (randomnumber === 2) {
+        $('#echo').text('チョキ');
+      } else {
+        $('#echo').text('パー');
+      }
+
+
+      //*結果
+      if (randomnumber === gu_btn) {
+        $("#result").text("あいこ");
+      } else if (randomnumber === cho_btn) {
+        $("#result").text("勝ち");
+      } else {
+        $("#result").text("負け");
+      }
+
+    });
+
+
+    $('#cho_btn').on('click', function () {
+
+      const min = 1;
+      const max = 3;
+      const gu_btn = 1;
+      const cho_btn = 2;
+      const par_btn = 3;
+
+
+      //ここに処理を追加
+
+
+      const randomnumber = Math.floor(Math.random() * (max - min + 1)) + min;
+      console.log(randomnumber);
+
+      //*相手
+      if (randomnumber === 1) {
+        $('#echo').text('グー');
+      } else if (randomnumber === 2) {
+        $('#echo').text('チョキ');
+      } else {
+        $('#echo').text('パー');
+      }
+
+
+      //*結果
+      if (randomnumber === gu_btn) {
+        $("#result").text("負け");
+      } else if (randomnumber === cho_btn) {
+        $("#result").text("あいこ");
+      } else {
+        $("#result").text("勝ち");
+      }
+
+    });
+
+
+
+    $('#par_btn').on('click', function () {
+
+      const min = 1;
+      const max = 3;
+      const gu_btn = 1;
+      const cho_btn = 2;
+      const par_btn = 3;
+
+
+      //ここに処理を追加
+
+
+      const randomnumber = Math.floor(Math.random() * (max - min + 1)) + min;
+      console.log(randomnumber);
+
+      //*相手
+      if (randomnumber === 1) {
+        $('#echo').text('グー');
+      } else if (randomnumber === 2) {
+        $('#echo').text('チョキ');
+      } else {
+        $('#echo').text('パー');
+      }
+
+
+      //*結果
+      if (randomnumber === gu_btn) {
+        $("#result").text("勝ち");
+      } else if (randomnumber === cho_btn) {
+        $("#result").text("負け");
+      } else {
+        $("#result").text("あいこ");
+      }
+
+    });
+
+
+
+
+
+
+
+
+  
+
+
+  </script>
+
+</body>
+
+</html>

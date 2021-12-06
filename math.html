@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>乱数発生の練習</title>
+</head>
+
+<body>
+  <h1>乱数発生の練習</h1>
+
+  <script>
+    // ここに処理を追加
+   //*const randomNumber1=Math.random(); 
+   //*console.log(randomNumber1); 
+
+   //*const randomNumber1=Math.floor(Math.random()*5); 
+   //*console.log(randomNumber1); 
+
+
+   //*問題1 0-9
+   const randomNumber1=Math.floor(Math.random()*10); 
+   //*console.log(randomNumber1); 
+
+   //*問題2 1-9 
+   const randomNumber2=Math.floor(Math.random()*9);+1; 
+   //*console.log(randomNumber2); 
+
+   //*問題3 5-10
+   const randomnumber3=Math.floor(Math.random()*6)+5; 
+   console.log(randomnumber3); 
+
+
+   const min=0; 
+   const max=4; 
+
+   const randomnumber=Math.floor(Math.random()*(max-min+1))+min; 
+   console.log(randomnumber); 
+
+   if(randomnumber===0){
+       alert('大吉'); 
+   }   else if (randomnumber===1){
+       alert('中吉'); 
+   }   else if(randomnumber===2){
+       alert('小吉'); 
+   }   else if(randomnumber===3){
+       alert('凶'); 
+   }   else if(randomnumber===4){
+       alert('大凶'); 
+   }   else { 
+       alert('エラー');     
+   }    
+   
+   
+   
+   
+  </script>
+</body>
+
+</html>
